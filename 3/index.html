@@ -65,6 +65,17 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
       $("h1").css("color", "red");
+      $(".section-1").css("background-color" , "yellow")
+      //obtener lo que esta en counter que sera string
+      //convertir ese string en number
+      //sumarle 10 al numer
+      //el resultado ponerlo en el span .counter
+      counter = $(".counter").text();
+      counter = parseInt(counter)
+      //console.log("el valor del counter es:" , typeof counter + 10) = typeoff indica si es number o string
+      counter = counter + 10
+      $(".counter").text(counter)//le asigno el valor de la variable counter a la clase .counter
+      console.log("el valor del counter es:" , counter + 10)// lo que podemos ver en la consola
     </script>
   </body>
 </html>
