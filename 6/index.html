@@ -27,6 +27,16 @@ Para la solución puedes inspirarte en: https://codepen.io/gabrieleromanato/pen/
     <title></title>
   </head>
   <body>
-
+  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero voluptas rem eligendi, reprehenderit labore quae. Velit ea expedita, accusantium, error eaque, maiores dolor quos mollitia tempora perferendis debitis possimus consequatur.</p>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+$(function() {
+    $("p").on( "contextmenu", function( e ) {
+        e.preventDefault();
+        $("p").text( "" );
+        alert("imagenes con derecho");
+    });
+});
+</script>
   </body>
 </html>
