@@ -70,12 +70,18 @@
       //convertir ese string en number
       //sumarle 10 al numer
       //el resultado ponerlo en el span .counter
-      counter = $(".counter").text();
+      var counter = $(".counter").text();
       counter = parseInt(counter)
       //console.log("el valor del counter es:" , typeof counter + 10) = typeoff indica si es number o string
       counter = counter + 10
       $(".counter").text(counter)//le asigno el valor de la variable counter a la clase .counter
       console.log("el valor del counter es:" , counter + 10)// lo que podemos ver en la consola
+      $("#row-3").on("click", function(){
+        $("#row-3").css("background-color" , "gray")
+        $("#row-3").css("transición" , "1s")
+      })
+      $(".section-1 h1").css("font-size" , "3em")
+      $("#row-4").css("background-color" , "red")
     </script>
   </body>
 </html>
